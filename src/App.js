@@ -1,22 +1,21 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import SlideNavButton from './Components/SlideNavButton'
 
-function App() {
-  return (
-    <div className="App">
-      <div className="Presentation">
-        <p>Name of the presentation</p>
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <div className="Presentation">
+          <p>Name of the presentation</p>
+        </div>
+        <div className="Controls">
+          <SlideNavButton value="Forward"/>
+          <SlideNavButton value="Back"/>
+        </div>
       </div>
-      <div className="Controls">
-        <button className="SlideNavButton">
-          Forward
-        </button>
-        <button className="SlideNavButton">
-          Back
-        </button>
-      </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default App;
