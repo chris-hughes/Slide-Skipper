@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import PresentationName from './Components/PresentationName'
+import PresentationConnect from './Components/PresentationConnect'
 import SlideNavButton from './Components/SlideNavButton'
 
 
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <PresentationName value="My brilliant presentation"/>
+        <PresentationConnect value="My brilliant presentation"/>
         <div className="Controls">
           <SlideNavButton value="Forward"/>
           <SlideNavButton value="Back"/>
